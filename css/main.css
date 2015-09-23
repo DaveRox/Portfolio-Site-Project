@@ -1,0 +1,26 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: "Lato", sans-serif;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+
+h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+}
+
+h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
