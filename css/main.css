@@ -432,6 +432,41 @@ footer {
    RESPONSIVE
    ============================================================ */
 @media (max-width: 720px) {
+  /* Nav */
+  nav {
+    padding: 1rem var(--pad-x);
+  }
+
+  /* Hero */
+  .hero {
+    padding: 6rem var(--pad-x) 4rem;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero-photo {
+    width: 110px;
+    height: 110px;
+  }
+
+  /* Section padding */
+  .about,
+  .services,
+  .why {
+    padding: 4rem var(--pad-x);
+  }
+
+  .cta-section {
+    padding: 5rem var(--pad-x);
+  }
+
+  .section-title {
+    margin-bottom: 2.5rem;
+  }
+
+  /* About */
   .about-grid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
@@ -441,15 +476,31 @@ footer {
     padding-top: 0;
   }
 
+  /* Services */
+  .service-card {
+    padding: 2rem 1.5rem;
+  }
+
+  /* Why */
   .why-grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
   }
 
   .why h2 {
     position: static;
   }
 
+  /* CTA button — email address needs room */
+  .btn-large {
+    font-size: 0.78rem;
+    padding: 1rem 1.25rem;
+    letter-spacing: 0.04em;
+    display: block;
+    text-align: center;
+  }
+
+  /* Footer */
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
