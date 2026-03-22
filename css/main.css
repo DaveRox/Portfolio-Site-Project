@@ -372,6 +372,57 @@ nav {
 }
 
 /* ============================================================
+   CREDENTIALS
+   ============================================================ */
+.credentials {
+  background: var(--light);
+  padding: 6rem var(--pad-x);
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.credential-card {
+  border-left: 3px solid var(--gold);
+  background: var(--white);
+  padding: 1.75rem 1.75rem 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.credential-tag {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gold-dk);
+  letter-spacing: 0.05em;
+}
+
+.credential-card strong {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--black);
+}
+
+.credential-card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.credential-inst {
+  font-size: 0.75rem;
+  color: var(--gray);
+  margin-top: 0.25rem;
+}
+
+/* ============================================================
    PERSPECTIVES
    ============================================================ */
 .perspectives {
@@ -503,6 +554,7 @@ footer {
   .about,
   .services,
   .why,
+  .credentials,
   .perspectives {
     padding: 4rem var(--pad-x);
   }
