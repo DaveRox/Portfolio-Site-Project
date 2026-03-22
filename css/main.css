@@ -249,6 +249,53 @@ nav {
 }
 
 /* ============================================================
+   JOURNEY
+   ============================================================ */
+.journey {
+  padding: 6rem var(--pad-x);
+  background: var(--light);
+}
+
+.journey-timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.journey-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem 2.5rem;
+  align-items: start;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.journey-item:first-child { padding-top: 0; }
+.journey-item:last-child  { border-bottom: none; padding-bottom: 0; }
+
+.journey-year {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gold-dk);
+  letter-spacing: 0.05em;
+  padding-top: 0.25rem;
+}
+
+.journey-item strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.journey-item p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ============================================================
    SERVICES
    ============================================================ */
 .services {
@@ -552,11 +599,17 @@ footer {
 
   /* Section padding */
   .about,
+  .journey,
   .services,
   .why,
   .credentials,
   .perspectives {
     padding: 4rem var(--pad-x);
+  }
+
+  .journey-item {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
   }
 
   .cta-section {
