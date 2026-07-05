@@ -287,8 +287,8 @@ nav.is-scrolled {
 .hero h1 {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(2.8rem, 7vw, 5.5rem);
-  line-height: 1.05;
+  font-size: clamp(2.4rem, 5.5vw, 4.25rem);
+  line-height: 1.08;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
 }
