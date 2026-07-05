@@ -8,27 +8,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script>document.documentElement.classList.add('js');</script>
   </head>
   <body>
 
     <!-- NAV -->
-    <nav>
+    <nav id="site-nav">
       <a href="#" class="nav-logo">DG</a>
       <a href="mailto:dguilford@newyorklife.com" class="nav-cta">Get in Touch</a>
     </nav>
 
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-inner">
-        <img src="images/DaveProfile.jpg" alt="Dave Guilford" class="hero-photo">
-        <p class="eyebrow">Director of Development · New York Life · New Orleans</p>
-        <h1>Training the Gulf South's&nbsp;best.</h1>
-        <p class="hero-sub">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow glow-1"></div>
+        <div class="hero-glow glow-2"></div>
+        <div class="hero-glow glow-3"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-inner" id="hero-parallax">
+        <div class="hero-photo-wrap enter enter-1">
+          <div class="hero-photo-ring" aria-hidden="true"></div>
+          <img src="images/DaveProfile.jpg" alt="Dave Guilford" class="hero-photo">
+        </div>
+        <p class="eyebrow enter enter-2">Director of Development · New York Life · New Orleans</p>
+        <h1 class="enter enter-3">Training the<br>Gulf South's <span class="gold-shimmer">best</span>.</h1>
+        <p class="hero-sub enter enter-4">
           Dave Guilford develops the most client-focused Financial Services
           Professionals in the Gulf South — with six advanced designations and
           two decades of real-world experience behind every lesson.
         </p>
-        <a href="mailto:dguilford@newyorklife.com" class="btn-primary">Let's Talk</a>
+        <div class="enter enter-5">
+          <a href="mailto:dguilford@newyorklife.com" class="btn-primary">Let's Talk</a>
+        </div>
       </div>
       <div class="hero-scroll-hint" aria-hidden="true">↓</div>
     </section>
@@ -37,20 +49,20 @@
     <section class="about" id="about">
       <div class="container">
         <div class="about-grid">
-          <div class="about-label">About</div>
+          <div class="about-label reveal">About</div>
           <div class="about-content">
-            <p class="about-lead">
+            <p class="about-lead reveal">
               As Director of Development for New York Life's New Orleans General
               Office, I give every Agent I train the best possible chance to succeed.
             </p>
-            <p>
+            <p class="reveal">
               My work spans the full range of professional development: sales training
               and licensing, financial solution design, prospecting techniques, and
               implementation of New York Life's curriculum. I also advise and consult
               with management on recruiting and retention — because building a great
               office starts before the first client meeting.
             </p>
-            <p>
+            <p class="reveal">
               Before moving into development, I spent years as an agent, financial
               planner, and investment adviser — and before that I coached MBA candidates
               at Loyola in LEAN startup methodology, advised an open-finance startup,
@@ -64,11 +76,11 @@
     <!-- SERVICES -->
     <section class="services" id="services">
       <div class="container">
-        <p class="section-eyebrow">What I Do</p>
-        <h2 class="section-title">Three ways I can help you.</h2>
+        <p class="section-eyebrow reveal">What I Do</p>
+        <h2 class="section-title reveal">Three ways I can help you.</h2>
         <div class="services-grid">
 
-          <div class="service-card">
+          <div class="service-card reveal">
             <div class="service-number">01</div>
             <h3>Agent Training<br>&amp; Development</h3>
             <p>
@@ -78,7 +90,7 @@
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card reveal reveal-d1">
             <div class="service-number">02</div>
             <h3>Financial Planning<br>&amp; Advisory</h3>
             <p>
@@ -89,7 +101,7 @@
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card reveal reveal-d2">
             <div class="service-number">03</div>
             <h3>Startup<br>Advising</h3>
             <p>
@@ -104,71 +116,137 @@
     </section>
 
     <!-- CREDENTIALS -->
-    <section class="why" id="credentials">
+    <section class="credentials" id="credentials">
       <div class="container">
-        <div class="why-grid">
-          <div>
-            <h2>Credentials<br>&amp; designations.</h2>
-          </div>
-          <div class="why-points">
-            <div class="why-item">
-              <span class="why-mark">—</span>
-              <div>
-                <strong>CLF® · Chartered Leadership Fellow</strong>
-                <p>The American College of Financial Services</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <span class="why-mark">—</span>
-              <div>
-                <strong>ChFC® · Chartered Financial Consultant</strong>
-                <p>The American College of Financial Services</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <span class="why-mark">—</span>
-              <div>
-                <strong>CLU® · Chartered Life Underwriter</strong>
-                <p>The American College of Financial Services</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <span class="why-mark">—</span>
-              <div>
-                <strong>RICP® · Retirement Income Certified Professional</strong>
-                <p>The American College of Financial Services</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <span class="why-mark">—</span>
-              <div>
-                <strong>CLTC® · Certification in Long Term Care</strong>
-                <p>Certification for Long Term Care</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <span class="why-mark">—</span>
-              <div>
-                <strong>FSCP® · Financial Services Certified Professional</strong>
-                <p>The American College of Financial Services</p>
+        <p class="section-eyebrow reveal">Credentials</p>
+        <h2 class="section-title reveal">Six designations.<br>What they mean for you.</h2>
+        <p class="credentials-hint reveal">Tap a card to see what each one actually does for the person across the table.</p>
+        <div class="cred-grid">
+
+          <div class="cred-card reveal">
+            <button class="cred-toggle" aria-expanded="false">
+              <span class="cred-abbr">ChFC<span class="cred-mark">®</span></span>
+              <span class="cred-name">Chartered Financial Consultant</span>
+              <span class="cred-plus" aria-hidden="true"></span>
+            </button>
+            <div class="cred-body">
+              <div class="cred-body-inner">
+                <p>
+                  The whole financial picture — income, investments, insurance, taxes,
+                  retirement, and estate — treated as one plan instead of six separate
+                  problems. When we talk about your money, nothing gets looked at in isolation.
+                </p>
+                <span class="cred-issuer">The American College of Financial Services</span>
               </div>
             </div>
           </div>
+
+          <div class="cred-card reveal reveal-d1">
+            <button class="cred-toggle" aria-expanded="false">
+              <span class="cred-abbr">CLU<span class="cred-mark">®</span></span>
+              <span class="cred-name">Chartered Life Underwriter</span>
+              <span class="cred-plus" aria-hidden="true"></span>
+            </button>
+            <div class="cred-body">
+              <div class="cred-body-inner">
+                <p>
+                  The gold standard in life insurance expertise. It means the protection
+                  built around your family or business is designed by someone who understands
+                  the fine print — so there are no surprises when it matters most.
+                </p>
+                <span class="cred-issuer">The American College of Financial Services</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cred-card reveal reveal-d2">
+            <button class="cred-toggle" aria-expanded="false">
+              <span class="cred-abbr">RICP<span class="cred-mark">®</span></span>
+              <span class="cred-name">Retirement Income Certified Professional</span>
+              <span class="cred-plus" aria-hidden="true"></span>
+            </button>
+            <div class="cred-body">
+              <div class="cred-body-inner">
+                <p>
+                  Saving for retirement is one skill; turning those savings into a paycheck
+                  that lasts the rest of your life is another. This designation is entirely
+                  about the second one — so your money doesn't retire before you do.
+                </p>
+                <span class="cred-issuer">The American College of Financial Services</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cred-card reveal">
+            <button class="cred-toggle" aria-expanded="false">
+              <span class="cred-abbr">CLF<span class="cred-mark">®</span></span>
+              <span class="cred-name">Chartered Leadership Fellow</span>
+              <span class="cred-plus" aria-hidden="true"></span>
+            </button>
+            <div class="cred-body">
+              <div class="cred-body-inner">
+                <p>
+                  Advanced training in building and leading teams of financial professionals.
+                  For you, it means the agents I develop aren't just licensed — they're
+                  coached by someone trained specifically in how to make advisors great.
+                </p>
+                <span class="cred-issuer">The American College of Financial Services</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cred-card reveal reveal-d1">
+            <button class="cred-toggle" aria-expanded="false">
+              <span class="cred-abbr">CLTC<span class="cred-mark">®</span></span>
+              <span class="cred-name">Certification in Long Term Care</span>
+              <span class="cred-plus" aria-hidden="true"></span>
+            </button>
+            <div class="cred-body">
+              <div class="cred-body-inner">
+                <p>
+                  Specialized planning for extended care — one of the few events that can
+                  undo a lifetime of careful saving. This training is about making sure a
+                  health event never becomes a financial one for the people you love.
+                </p>
+                <span class="cred-issuer">Certification for Long Term Care</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cred-card reveal reveal-d2">
+            <button class="cred-toggle" aria-expanded="false">
+              <span class="cred-abbr">FSCP<span class="cred-mark">®</span></span>
+              <span class="cred-name">Financial Services Certified Professional</span>
+              <span class="cred-plus" aria-hidden="true"></span>
+            </button>
+            <div class="cred-body">
+              <div class="cred-body-inner">
+                <p>
+                  Grounded in ethical, client-first advice and clear communication.
+                  It's the foundation of how I work: plain language, honest answers,
+                  and recommendations built around your goals — not a product quota.
+                </p>
+                <span class="cred-issuer">The American College of Financial Services</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
     <!-- CTA -->
     <section class="cta-section" id="contact">
+      <div class="cta-glow" aria-hidden="true"></div>
       <div class="container">
-        <p class="eyebrow">Ready when you are.</p>
-        <h2>Let's talk about<br>what you're building.</h2>
-        <p class="cta-sub">
+        <p class="eyebrow reveal">Ready when you are.</p>
+        <h2 class="reveal">Let's talk about<br>what you're building.</h2>
+        <p class="cta-sub reveal">
           Whether you're an agent looking to grow, a founder navigating
           the Gulf South ecosystem, or planning your financial future —
           reach out and let's have an honest conversation.
         </p>
-        <a href="mailto:dguilford@newyorklife.com" class="btn-primary btn-large">
+        <a href="mailto:dguilford@newyorklife.com" class="btn-primary btn-large reveal">
           dguilford@newyorklife.com
         </a>
       </div>
@@ -186,5 +264,6 @@
       </div>
     </footer>
 
+    <script src="js/site.js"></script>
   </body>
 </html>
