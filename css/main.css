@@ -16,7 +16,7 @@
   --light:   #F2EFE9;
   --border:  #E0DCD4;
 
-  --font-display: 'Syne', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
   --font-body:    'Inter', sans-serif;
 
   --max-w: 1100px;
@@ -421,6 +421,53 @@ nav.is-scrolled {
 }
 
 /* ============================================================
+   JOURNEY
+   ============================================================ */
+.journey {
+  padding: 6rem var(--pad-x);
+  background: var(--light);
+}
+
+.journey-timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.journey-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem 2.5rem;
+  align-items: start;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.journey-item:first-child { padding-top: 0; }
+.journey-item:last-child  { border-bottom: none; padding-bottom: 0; }
+
+.journey-year {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gold-dk);
+  letter-spacing: 0.05em;
+  padding-top: 0.25rem;
+}
+
+.journey-item strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.journey-item p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ============================================================
    SERVICES
    ============================================================ */
 .services {
@@ -636,6 +683,61 @@ nav.is-scrolled {
 }
 
 /* ============================================================
+   PERSPECTIVES
+   ============================================================ */
+.perspectives {
+  background: var(--white);
+  padding: 6rem var(--pad-x);
+}
+
+.perspectives .section-title {
+  margin-bottom: 3rem;
+}
+
+.perspectives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.perspective-card {
+  border-left: 3px solid var(--gold);
+  background: var(--light);
+  padding: 1.75rem 1.75rem 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0 4px 4px 0;
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s;
+}
+
+.perspective-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+.perspective-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gold-dk);
+}
+
+.perspective-card blockquote {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #333;
+  flex: 1;
+  font-style: italic;
+}
+
+.perspective-date {
+  font-size: 0.75rem;
+  color: var(--gray);
+}
+
+/* ============================================================
    CTA SECTION
    ============================================================ */
 .cta-section {
@@ -774,8 +876,10 @@ footer {
 
   /* Section padding */
   .about,
+  .journey,
   .services,
-  .credentials {
+  .credentials,
+  .perspectives {
     padding: 4rem var(--pad-x);
   }
 
@@ -795,7 +899,7 @@ footer {
     margin-bottom: 2rem;
   }
 
-  /* About */
+  /* About + Journey */
   .about-grid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
@@ -803,6 +907,11 @@ footer {
 
   .about-label {
     padding-top: 0;
+  }
+
+  .journey-item {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
   }
 
   /* Services */
@@ -821,6 +930,11 @@ footer {
 
   .cred-issuer {
     padding: 0.9rem 1.25rem 1.2rem;
+  }
+
+  /* Perspectives */
+  .perspective-card {
+    padding: 1.5rem 1.25rem 1.5rem 1.5rem;
   }
 
   /* CTA button — email address needs room */
