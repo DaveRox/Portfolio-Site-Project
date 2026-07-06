@@ -865,6 +865,22 @@ footer {
   color: var(--gold);
 }
 
+.footer-disclosure {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.footer-disclosure p {
+  font-size: 0.68rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.footer-disclosure p + p {
+  margin-top: 0.75rem;
+}
+
 /* Compact hero for shorter desktop/laptop viewports so the CTA
    stays above the fold */
 @media (max-height: 880px) and (min-width: 721px) {
